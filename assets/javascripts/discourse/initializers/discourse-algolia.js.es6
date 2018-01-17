@@ -50,7 +50,7 @@ export default {
         }
       });
 
-      api.decorateWidget('header-icons:before', function(helper) {
+      api.decorateWidget('header:before', function(helper) {
         if (helper.widget.siteSettings.algolia_enabled &&
             helper.widget.siteSettings.algolia_autocomplete_enabled) {
           return helper.attach('algolia');
