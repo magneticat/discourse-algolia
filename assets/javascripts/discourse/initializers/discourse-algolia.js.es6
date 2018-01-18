@@ -50,13 +50,6 @@ export default {
         }
       });
 
-      api.decorateWidget('wcrsearch:before', function(helper) {
-        if (helper.widget.siteSettings.algolia_enabled &&
-            helper.widget.siteSettings.algolia_autocomplete_enabled) {
-          return helper.attach('algolia');
-        }
-      });
-
     });
   }
 }
