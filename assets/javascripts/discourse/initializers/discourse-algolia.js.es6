@@ -33,7 +33,7 @@ export default {
       });
 
       api.createWidget('algolia', {
-        tagName: 'li.algolia-holder',
+        tagName: 'div.algolia-holder',
         html() {
           return [
             h('form', {
@@ -50,7 +50,7 @@ export default {
         }
       });
 
-      api.decorateWidget('wcrsearch', function(helper) {
+      api.decorateWidget('wcrsearch:before', function(helper) {
         if (helper.widget.siteSettings.algolia_enabled &&
             helper.widget.siteSettings.algolia_autocomplete_enabled) {
           return helper.attach('algolia');
