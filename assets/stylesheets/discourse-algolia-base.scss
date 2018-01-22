@@ -6,12 +6,6 @@ body.algolia-enabled {
   .extra-info-wrapper {
     max-width: 300px;
   }
-
-  /* hide the default search icon */
-  header .icons > li:nth-child(2) {
-    display: none;
-  }
-
   .algolia-holder {
     padding: 3px 15px 0 0;
     text-align: left;
